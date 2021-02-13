@@ -16953,6 +16953,9 @@ h3 {
 .footer-section img {
   margin: 5px;
 }
+.footer-section .social-icons .fab {
+  font-size: 35px;
+}
 
 .info-container {
   margin-top: 50px;

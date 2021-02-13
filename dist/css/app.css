@@ -4589,7 +4589,7 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
   font-display: block;
   src: url(../public/_/node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400-98f20b9ec79b2fee02a300f4b716629f.eot);
-  src: url(../public/_/node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400-98f20b9ec79b2fee02a300f4b716629f.eot?#iefix) format("embedded-opentype"), url(../public/_/node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400-6e63bd22128f27b83f228bf5ef541156.woff2) format("woff2"), url(../public/_/node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400-5f63cb7f47b6ea89773b43a6e687e5a5.woff) format("woff"), url(../public/_/node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400-330e879afe4a0abb35f235e29be3084f.ttf) format("truetype"), url(../public/_/node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400-192cd5298d9a5395949b2388787736a4.svg#fontawesome) format("svg"); }
+  src: url(../public/_/node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400-98f20b9ec79b2fee02a300f4b716629f.eot?#iefix) format("embedded-opentype"), url(../public/_/node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400-6e63bd22128f27b83f228bf5ef541156.woff2) format("woff2"), url(../public/_/node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400-5f63cb7f47b6ea89773b43a6e687e5a5.woff) format("woff"), url(../public/_/node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400-330e879afe4a0abb35f235e29be3084f.ttf) format("truetype"), url(../public/_/node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400-991c1c761fc31f9c3252dbfb2a22fd7a.svg#fontawesome) format("svg"); }
 
 .fab {
   font-family: 'Font Awesome 5 Brands';
@@ -4600,7 +4600,7 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
   font-display: block;
   src: url(../public/_/node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400-62a07ffeac77696f17ef438f49ce6790.eot);
-  src: url(../public/_/node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400-62a07ffeac77696f17ef438f49ce6790.eot?#iefix) format("embedded-opentype"), url(../public/_/node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400-2c154b0f8c0d8d1661627d1ddb317b12.woff2) format("woff2"), url(../public/_/node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400-ea5a41ec4a24ce93298ee053b6357e18.woff) format("woff"), url(../public/_/node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400-ac2367644e559de4ff330fbb7c273e70.ttf) format("truetype"), url(../public/_/node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400-7ad3aa1babbb1ac10b1cdc16cc70569a.svg#fontawesome) format("svg"); }
+  src: url(../public/_/node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400-62a07ffeac77696f17ef438f49ce6790.eot?#iefix) format("embedded-opentype"), url(../public/_/node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400-2c154b0f8c0d8d1661627d1ddb317b12.woff2) format("woff2"), url(../public/_/node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400-ea5a41ec4a24ce93298ee053b6357e18.woff) format("woff"), url(../public/_/node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400-ac2367644e559de4ff330fbb7c273e70.ttf) format("truetype"), url(../public/_/node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400-f3187c7462849ed261a89dc27e7a4733.svg#fontawesome) format("svg"); }
 
 .far {
   font-family: 'Font Awesome 5 Free';
@@ -4611,7 +4611,7 @@ readers do not read off random characters that represent icons */
   font-weight: 900;
   font-display: block;
   src: url(../public/_/node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900-6606667d9800a27eb8b5f61ccb66d510.eot);
-  src: url(../public/_/node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900-6606667d9800a27eb8b5f61ccb66d510.eot?#iefix) format("embedded-opentype"), url(../public/_/node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900-3eb06c702e27fb110194f5a16c45cb8e.woff2) format("woff2"), url(../public/_/node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900-f4f93856730733912b1e06ad64c0baf7.woff) format("woff"), url(../public/_/node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900-915a0b79c22a1c1f64da9e0a90a12f02.ttf) format("truetype"), url(../public/_/node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900-50f15eb6c1a2fb956fe22c11c8520e46.svg#fontawesome) format("svg"); }
+  src: url(../public/_/node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900-6606667d9800a27eb8b5f61ccb66d510.eot?#iefix) format("embedded-opentype"), url(../public/_/node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900-3eb06c702e27fb110194f5a16c45cb8e.woff2) format("woff2"), url(../public/_/node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900-f4f93856730733912b1e06ad64c0baf7.woff) format("woff"), url(../public/_/node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900-915a0b79c22a1c1f64da9e0a90a12f02.ttf) format("truetype"), url(../public/_/node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900-0454203f26b33fc02e2b686b317aab3d.svg#fontawesome) format("svg"); }
 
 .fa,
 .fas {
@@ -16539,20 +16539,21 @@ h3 {
     margin-bottom: 0;
   }
 }
-.books-main-section .item:hover {
-  -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.2784313725);
-          box-shadow: 0 0 16px rgba(0, 0, 0, 0.2784313725);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  -webkit-box-shadow: 0px 12px 10px 2px rgba(25, 54, 118, 0.5);
-          box-shadow: 0px 12px 10px 2px rgba(25, 54, 118, 0.5);
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
+.books-main-section .item .image-container {
+  width: 100%;
+  overflow: hidden;
 }
-.books-main-section .item .item-body {
+.books-main-section .item .image-container img {
+  max-width: 100%;
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  transition: -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
+}
+.books-main-section .item .item-main {
   width: 100%;
 }
-.books-main-section .item .item-body h6 {
+.books-main-section .item .item-main h6 {
   font-family: "Hermeneus One", sans-serif;
   font-weight: 400;
   color: #2b3d72;
@@ -16560,7 +16561,7 @@ h3 {
   padding-left: 10px;
   padding-top: 30px;
 }
-.books-main-section .item .item-body .text {
+.books-main-section .item .item-main .text {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   color: #878787;
@@ -16568,14 +16569,14 @@ h3 {
   font-size: 13px;
   padding-left: 10px;
 }
-.books-main-section .item .item-body .price {
+.books-main-section .item .item-main .price {
   color: #ee1c24;
   font-family: "Lato", sans-serif;
   font-family: 400;
   font-size: 13px;
   padding-left: 10px;
 }
-.books-main-section .item .item-body .buy-btn {
+.books-main-section .item .item-main .buy-btn {
   border-radius: 10em;
   padding: 10px 40px;
   font-size: 0.9em;
@@ -16590,30 +16591,48 @@ h3 {
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
-.books-main-section .item .item-body .buy-btn:hover {
-  background: transparent;
+.books-main-section .item .item-main .buy-btn:hover {
+  background: rgba(43, 61, 114, 0);
   color: #2b3d72;
 }
-.books-main-section .item .item-body .card {
-  border-color: #c7c7c7;
+.books-main-section .item:hover .image-container img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .bestseller-section {
   margin-top: 80px;
 }
-.bestseller-section h2 {
+.bestseller-section .title-section h2 {
   text-align: center;
   color: #2f3033;
   font-family: "Hermeneus One", sans-serif;
   font-weight: 400;
   font-size: 2.3rem;
 }
-.bestseller-section p {
+.bestseller-section .title-section p {
   text-align: center;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 0.8rem;
   color: #757575;
+}
+.bestseller-section .section-main .shop-boxes {
+  display: grid;
+  grid-template-areas: "leftBox rightTopBox" "leftBox rightBottomBox";
+}
+.bestseller-section .section-main .shop-boxes .box {
+  min-height: 200px;
+}
+.bestseller-section .section-main .shop-boxes .box.left-box {
+  grid-area: leftBox;
+  background-color: #110d1e;
+}
+.bestseller-section .section-main .shop-boxes .box.right-top-box {
+  grid-area: rightTopBox;
+}
+.bestseller-section .section-main .shop-boxes .box.right-bottom-box {
+  grid-area: rightBottomBox;
 }
 
 .recent-launch-section {

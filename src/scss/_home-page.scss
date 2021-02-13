@@ -214,11 +214,11 @@
 
 //recent-launch-section
 .recent-launch-section{
-    margin-bottom: 60px;
+    margin-bottom: 7%;
+    padding: 12% 0%;
     background-image: url("../images/recent.jpg");
     background-size: cover;
     width:100%;
-    padding:30vh;
     h2{
         font-family: $secondary-font;
         font-weight:400;
@@ -288,7 +288,7 @@
         margin-bottom: 17px;
         img{
         }
-        
+
         &:hover {
             box-shadow: 0 0 16px rgba(0, 0, 0, 0.2784313725490196);
             transition: 0.5s;

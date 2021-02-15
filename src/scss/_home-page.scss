@@ -201,6 +201,7 @@
 //bestseller-section
 .bestseller-section {
     margin-top: 80px;
+    
     .title-section {
         h2 {
             text-align: center;
@@ -209,6 +210,7 @@
             font-weight: 400;
             font-size: 2.3rem;
         }
+
         p {
             text-align: center;
             font-family: $primary-font;
@@ -221,6 +223,7 @@
     .section-main {
         .shop-boxes {
             display: grid;
+            grid-template-columns: 1fr 1fr;
             grid-template-areas: 
                 'leftBox rightTopBox'
                 'leftBox rightBottomBox';
@@ -228,17 +231,53 @@
             .box {
                 min-height: 200px;
 
+                .text-box {
+                    color: #fff;
+                    
+                    .product-title {
+                        font-family: $secondary-font;
+                        font-size: 2.3em;
+                    }
+
+                    .product-small-title {
+                        font-family: $primary-font;
+                        
+                    }
+                }
+
                 &.left-box {
                     grid-area: leftBox;
                     background-color: #110d1e;
+
+                    .image-container {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        img {
+                            width: auto;
+                            max-width: 100%;
+                        }
+                    }
+                    
+                    .text-box {
+                        text-align: center;
+                    }
                 }
 
                 &.right-top-box {
                     grid-area: rightTopBox;
+                    background-image: url('../images/fetured-book-2.jpg');
+                    background-size: cover;
+                    background-position: bottom center;
                 }
 
                 &.right-bottom-box {
                     grid-area: rightBottomBox;
+                    background-image: url('../images/fetured-book-3.jpg');
+                    background-size: cover;
+                    background-position: center;
                 }
             }
         }

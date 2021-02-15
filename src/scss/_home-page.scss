@@ -204,11 +204,11 @@
 
 //recent-launch-section
 .recent-launch-section {
-    margin-bottom: 60px;
+    margin-bottom: 7%;
+    padding: 12% 0%;
     background-image: url('../images/recent.jpg');
     background-size: cover;
     width: 100%;
-    padding: 30vh;
     h2 {
         font-family: $secondary-font;
         font-weight: 400;
@@ -337,6 +337,18 @@
 .footer-section {
     padding-top: 35px;
     background-color: #2b2b33;
+    .news-box {
+        justify-content: center;
+        @media (min-width: 768px) {
+            justify-content: left;
+        }
+    }
+    .news-letter {
+        text-align: center;
+        @media (min-width: 768px) {
+            text-align: left;
+        }
+    }
     h6 {
         font-family: $primary-font;
         font-size: 0.9em;
@@ -477,12 +489,18 @@
             margin-top: 25px;
         }
         .payment-img {
-            width: 110px;
-            height: 48px;
+            width: 82px;
+            height: 47px;
             border-radius: 0;
         }
         .payment-icons {
-            display: flex;
+            display: -webkit-inline-box;
+            img {
+                margin-bottom: 40%;
+            }
+            @media (min-width: 768px) {
+                display: flex;
+            }
         }
         ul {
             padding: 0px 0px;
@@ -504,23 +522,45 @@
             }
         }
     }
-}
 
-.copyright-container {
-    border-top: 1px solid #3f3f46;
-    h6 {
-        font-family: $primary-font;
-        font-weight: 300;
-        font-size: 11px;
-        color: #555559;
-        margin: 15px 0px;
-        width: 100%;
-        text-align: center;
-        @media (min-width: 768px) {
-            width: auto;
+    .copyright-container {
+        border-top: 1px solid #3f3f46;
+        h6 {
+            font-family: $primary-font;
+            font-weight: 300;
+            font-size: 11px;
+            color: #555559;
+            margin: 15px 0px;
+            width: 100%;
+            text-align: center;
+            @media (min-width: 768px) {
+                width: auto;
+            }
+            span {
+                color: #b7b7b8;
+            }
         }
-        span {
-            color: #b7b7b8;
+    }
+}
+.footer-ribbon {
+    background-color: #2b2b33;
+    text-align: center;
+    .copyright-container {
+        width: 100%;
+        h6 {
+            font-family: $primary-font;
+            font-weight: 300;
+            font-size: 11px;
+            color: #555559;
+            margin: 15px 0px;
+            width: 100%;
+            text-align: center;
+            @media (min-width: 768px) {
+                width: auto;
+            }
+            span {
+                color: #b7b7b8;
+            }
         }
     }
 }

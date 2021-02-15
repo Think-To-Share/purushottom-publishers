@@ -16377,6 +16377,83 @@ h3 {
     border-color: #dee2e6;
   }
 }
+.book-item {
+  border: 1px solid #c7c7c7;
+  padding: 15px;
+  margin-bottom: 25px;
+  background-color: #fff;
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  transition: -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
+}
+.book-item .image-container {
+  width: 100%;
+  overflow: hidden;
+}
+.book-item .image-container img {
+  max-width: 100%;
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  transition: -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
+}
+.book-item .item-main {
+  width: 100%;
+}
+.book-item .item-main h6 {
+  font-family: "Hermeneus One", sans-serif;
+  font-weight: 400;
+  color: #2b3d72;
+  font-size: 1.3rem;
+  padding-left: 10px;
+  padding-top: 30px;
+}
+.book-item .item-main .text {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #878787;
+  margin-bottom: 2px;
+  font-size: 13px;
+  padding-left: 10px;
+}
+.book-item .item-main .price {
+  color: #ee1c24;
+  font-family: "Lato", sans-serif;
+  font-family: 400;
+  font-size: 13px;
+  padding-left: 10px;
+}
+.book-item .item-main .buy-btn {
+  border-radius: 10em;
+  padding: 10px 40px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  color: white;
+  background-color: #2b3d72;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid #2b3d72;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+.book-item .item-main .buy-btn:hover {
+  background: rgba(43, 61, 114, 0);
+  color: #2b3d72;
+}
+.book-item:hover {
+  -webkit-box-shadow: 0px 12px 18px 2px rgba(25, 54, 118, 0.32);
+          box-shadow: 0px 12px 18px 2px rgba(25, 54, 118, 0.32);
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+.book-item:hover .image-container img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 .header-section {
   display: -webkit-box;
   display: -webkit-flex;
@@ -16528,76 +16605,6 @@ h3 {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.books-main-section .item {
-  border: 1px solid #c7c7c7;
-  padding: 15px;
-  margin-bottom: 17px;
-}
-@media (min-width: 768px) {
-  .books-main-section .item {
-    margin-bottom: 0;
-  }
-}
-.books-main-section .item .image-container {
-  width: 100%;
-  overflow: hidden;
-}
-.books-main-section .item .image-container img {
-  max-width: 100%;
-  -webkit-transition: -webkit-transform 0.2s ease-in;
-  transition: -webkit-transform 0.2s ease-in;
-  transition: transform 0.2s ease-in;
-  transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
-}
-.books-main-section .item .item-main {
-  width: 100%;
-}
-.books-main-section .item .item-main h6 {
-  font-family: "Hermeneus One", sans-serif;
-  font-weight: 400;
-  color: #2b3d72;
-  font-size: 1.3rem;
-  padding-left: 10px;
-  padding-top: 30px;
-}
-.books-main-section .item .item-main .text {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  color: #878787;
-  margin-bottom: 2px;
-  font-size: 13px;
-  padding-left: 10px;
-}
-.books-main-section .item .item-main .price {
-  color: #ee1c24;
-  font-family: "Lato", sans-serif;
-  font-family: 400;
-  font-size: 13px;
-  padding-left: 10px;
-}
-.books-main-section .item .item-main .buy-btn {
-  border-radius: 10em;
-  padding: 10px 40px;
-  font-size: 0.9em;
-  text-transform: uppercase;
-  color: white;
-  background-color: #2b3d72;
-  font-family: "Lato", sans-serif;
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-block;
-  border: 1px solid #2b3d72;
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-}
-.books-main-section .item .item-main .buy-btn:hover {
-  background: rgba(43, 61, 114, 0);
-  color: #2b3d72;
-}
-.books-main-section .item:hover .image-container img {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
 }
 
 .bestseller-section {
@@ -16752,70 +16759,6 @@ h3 {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.all-books-main-section .item {
-  border: 1px solid #c7c7c7;
-  padding: 15px;
-  margin-bottom: 17px;
-}
-.all-books-main-section .item:hover {
-  -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.2784313725);
-          box-shadow: 0 0 16px rgba(0, 0, 0, 0.2784313725);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  -webkit-box-shadow: 0px 12px 10px 2px rgba(25, 54, 118, 0.5);
-          box-shadow: 0px 12px 10px 2px rgba(25, 54, 118, 0.5);
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
-}
-.all-books-main-section .item-body {
-  width: 250px;
-}
-.all-books-main-section .item-body h6 {
-  font-family: "Hermeneus One", sans-serif;
-  font-weight: 400;
-  color: #2b3d72;
-  font-size: 1.3rem;
-}
-.all-books-main-section .item-body .text {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  color: #878787;
-  margin-bottom: 2px;
-  font-size: 13px;
-}
-.all-books-main-section .item-body .price {
-  color: #ee1c24;
-  font-family: "Lato", sans-serif;
-  font-family: 400;
-  font-size: 13px;
-}
-.all-books-main-section .item-body .buy-btn {
-  border-radius: 10em;
-  padding: 10px 40px;
-  font-size: 0.9em;
-  text-transform: uppercase;
-  color: white;
-  background-color: #2b3d72;
-  font-family: "Lato", sans-serif;
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-block;
-  border: 1px solid #2b3d72;
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-}
-.all-books-main-section .item-body .buy-btn:hover {
-  background: transparent;
-  color: #2b3d72;
-}
-.all-books-main-section .item-body .card {
-  border-color: #c7c7c7;
-}
-@media (min-width: 768px) {
-  .all-books-main-section {
-    margin-bottom: 0;
-  }
 }
 
 .all-books-second-section {

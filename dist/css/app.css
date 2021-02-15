@@ -16377,6 +16377,83 @@ h3 {
     border-color: #dee2e6;
   }
 }
+.book-item {
+  border: 1px solid #c7c7c7;
+  padding: 15px;
+  margin-bottom: 25px;
+  background-color: #fff;
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  transition: -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
+}
+.book-item .image-container {
+  width: 100%;
+  overflow: hidden;
+}
+.book-item .image-container img {
+  max-width: 100%;
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  transition: -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
+}
+.book-item .item-main {
+  width: 100%;
+}
+.book-item .item-main h6 {
+  font-family: "Hermeneus One", sans-serif;
+  font-weight: 400;
+  color: #2b3d72;
+  font-size: 1.3rem;
+  padding-left: 10px;
+  padding-top: 30px;
+}
+.book-item .item-main .text {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #878787;
+  margin-bottom: 2px;
+  font-size: 13px;
+  padding-left: 10px;
+}
+.book-item .item-main .price {
+  color: #ee1c24;
+  font-family: "Lato", sans-serif;
+  font-family: 400;
+  font-size: 13px;
+  padding-left: 10px;
+}
+.book-item .item-main .buy-btn {
+  border-radius: 10em;
+  padding: 10px 40px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  color: white;
+  background-color: #2b3d72;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid #2b3d72;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+.book-item .item-main .buy-btn:hover {
+  background: rgba(43, 61, 114, 0);
+  color: #2b3d72;
+}
+.book-item:hover {
+  -webkit-box-shadow: 0px 12px 18px 2px rgba(25, 54, 118, 0.32);
+          box-shadow: 0px 12px 18px 2px rgba(25, 54, 118, 0.32);
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+.book-item:hover .image-container img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 .header-section {
   display: -webkit-box;
   display: -webkit-flex;
@@ -16593,76 +16670,6 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
 }
-.books-main-section .item {
-  border: 1px solid #c7c7c7;
-  padding: 15px;
-  margin-bottom: 17px;
-}
-@media (min-width: 768px) {
-  .books-main-section .item {
-    margin-bottom: 0;
-  }
-}
-.books-main-section .item .image-container {
-  width: 100%;
-  overflow: hidden;
-}
-.books-main-section .item .image-container img {
-  max-width: 100%;
-  -webkit-transition: -webkit-transform 0.2s ease-in;
-  transition: -webkit-transform 0.2s ease-in;
-  transition: transform 0.2s ease-in;
-  transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
-}
-.books-main-section .item .item-main {
-  width: 100%;
-}
-.books-main-section .item .item-main h6 {
-  font-family: "Hermeneus One", sans-serif;
-  font-weight: 400;
-  color: #2b3d72;
-  font-size: 1.3rem;
-  padding-left: 10px;
-  padding-top: 30px;
-}
-.books-main-section .item .item-main .text {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  color: #878787;
-  margin-bottom: 2px;
-  font-size: 13px;
-  padding-left: 10px;
-}
-.books-main-section .item .item-main .price {
-  color: #ee1c24;
-  font-family: "Lato", sans-serif;
-  font-family: 400;
-  font-size: 13px;
-  padding-left: 10px;
-}
-.books-main-section .item .item-main .buy-btn {
-  border-radius: 10em;
-  padding: 10px 40px;
-  font-size: 0.9em;
-  text-transform: uppercase;
-  color: white;
-  background-color: #2b3d72;
-  font-family: "Lato", sans-serif;
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-block;
-  border: 1px solid #2b3d72;
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-}
-.books-main-section .item .item-main .buy-btn:hover {
-  background: rgba(43, 61, 114, 0);
-  color: #2b3d72;
-}
-.books-main-section .item:hover .image-container img {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
 
 .bestseller-section {
   margin-top: 80px;
@@ -16683,20 +16690,59 @@ h3 {
 }
 .bestseller-section .section-main .shop-boxes {
   display: grid;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas: "leftBox rightTopBox" "leftBox rightBottomBox";
 }
 .bestseller-section .section-main .shop-boxes .box {
   min-height: 200px;
 }
+.bestseller-section .section-main .shop-boxes .box .text-box {
+  color: #fff;
+}
+.bestseller-section .section-main .shop-boxes .box .text-box .product-title {
+  font-family: "Hermeneus One", sans-serif;
+  font-size: 2.3em;
+}
+.bestseller-section .section-main .shop-boxes .box .text-box .product-small-title {
+  font-family: "Lato", sans-serif;
+}
 .bestseller-section .section-main .shop-boxes .box.left-box {
   grid-area: leftBox;
   background-color: #110d1e;
 }
+.bestseller-section .section-main .shop-boxes .box.left-box .image-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bestseller-section .section-main .shop-boxes .box.left-box .image-container img {
+  width: auto;
+  max-width: 100%;
+}
+.bestseller-section .section-main .shop-boxes .box.left-box .text-box {
+  text-align: center;
+}
 .bestseller-section .section-main .shop-boxes .box.right-top-box {
   grid-area: rightTopBox;
+  background-image: url(../public/images/fetured-book-2-5a2a36351a308b38bffdc9a492c5b109.jpg);
+  background-size: cover;
+  background-position: bottom center;
 }
 .bestseller-section .section-main .shop-boxes .box.right-bottom-box {
   grid-area: rightBottomBox;
+  background-image: url(../public/images/fetured-book-3-08a28a8d218851127aa8b602f8d0e616.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .recent-launch-section {
@@ -16777,70 +16823,6 @@ h3 {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.all-books-main-section .item {
-  border: 1px solid #c7c7c7;
-  padding: 15px;
-  margin-bottom: 17px;
-}
-.all-books-main-section .item:hover {
-  -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.2784313725);
-          box-shadow: 0 0 16px rgba(0, 0, 0, 0.2784313725);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  -webkit-box-shadow: 0px 12px 10px 2px rgba(25, 54, 118, 0.5);
-          box-shadow: 0px 12px 10px 2px rgba(25, 54, 118, 0.5);
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
-}
-.all-books-main-section .item-body {
-  width: 250px;
-}
-.all-books-main-section .item-body h6 {
-  font-family: "Hermeneus One", sans-serif;
-  font-weight: 400;
-  color: #2b3d72;
-  font-size: 1.3rem;
-}
-.all-books-main-section .item-body .text {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  color: #878787;
-  margin-bottom: 2px;
-  font-size: 13px;
-}
-.all-books-main-section .item-body .price {
-  color: #ee1c24;
-  font-family: "Lato", sans-serif;
-  font-family: 400;
-  font-size: 13px;
-}
-.all-books-main-section .item-body .buy-btn {
-  border-radius: 10em;
-  padding: 10px 40px;
-  font-size: 0.9em;
-  text-transform: uppercase;
-  color: white;
-  background-color: #2b3d72;
-  font-family: "Lato", sans-serif;
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-block;
-  border: 1px solid #2b3d72;
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-}
-.all-books-main-section .item-body .buy-btn:hover {
-  background: transparent;
-  color: #2b3d72;
-}
-.all-books-main-section .item-body .card {
-  border-color: #c7c7c7;
-}
-@media (min-width: 768px) {
-  .all-books-main-section {
-    margin-bottom: 0;
-  }
 }
 
 .all-books-second-section {

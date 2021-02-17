@@ -1,14 +1,33 @@
 // header ribbon
 .header-ribbon
 {
-    // .social-media-box
-    // {
-    //     display: flex;
-    //     justify-content: center;
-    //     @media (min-width: 768px) {
-    //         justify-content: left;
-    //     } 
-    // }
+    .social-media-box
+    {
+        display: flex;
+        justify-content: center;
+        @media (min-width: 768px) {
+            justify-content: left;
+        }
+        i{
+            color: #aeaeae;
+            font-size: 20px;
+            // padding-top: 17%;
+        }
+        a{
+            padding-top: 5%;
+            @media (min-width: 768px) {
+                padding-top: 14%;
+            }
+        }
+        // .header-social-icon
+        // {
+        //     color: #aeaeae;
+        //     font-size: 20px;
+        //     i{
+        //         padding-top: 17%;
+        //     }
+        // }
+    }
 
     .logo-container
     {
@@ -45,16 +64,8 @@
     .head-right-items
     {
         padding-right: 2%;
-    }
-    .header-social-icon
-    {
-        color: #aeaeae;
-        font-size: 20px;
-        i{
-            padding-top: 17%;
-        }
-    }
 
+    }    
 }
 
 // logo-section
@@ -88,6 +99,7 @@
     }
 }
 
+
 // hero-section
 .hero-section {
     display: flex;
@@ -96,7 +108,7 @@
     margin-bottom: 80px;
     height: 150vh;
 
-    p {
+    p{
         text-align: center;
         margin-bottom: 0px;
     }
@@ -191,6 +203,11 @@
             font-family: $secondary-font;
             font-weight: 400;
             font-size: 2.3rem;
+            text-align: center;
+            @media(width: 768px)
+            {
+                text-align: left;
+            }
         }
 
         p {
@@ -199,6 +216,11 @@
             font-weight: 400;
             font-size: 0.8rem;
             color: #757575;
+            text-align: center;
+            @media(width:768px)
+            {
+                text-align: left;
+            }
         }
     }
 
@@ -299,6 +321,11 @@
         font-family: $secondary-font;
         font-weight: 400;
         padding-left: 120px;
+        color:#fff;
+        @media(min-width: 768px)
+        {
+            color: #000;
+        }
     }
     p {
         font-family: $primary-font;
@@ -306,6 +333,11 @@
         font-size: 13px;
         margin-right: 55px;
         padding-left: 120px;
+        color: #fff;
+        @media(min-width: 768px)
+        {
+            color: #000;
+        }
     }
     a {
         padding-left: 120px;
@@ -631,6 +663,7 @@
 .footer-ribbon {
     background-color: #2b2b33;
     text-align: center;
+    border-top: 1px solid #44444a;
     .copyright-container {
         width: 100%;
         h6 {

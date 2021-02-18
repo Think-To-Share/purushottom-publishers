@@ -5,52 +5,33 @@
     {
         display: flex;
         justify-content: center;
+        align-items: center;
+
         @media (min-width: 768px) {
             justify-content: left;
         }
-        i{
-            color: #aeaeae;
-            font-size: 20px;
-            // padding-top: 17%;
-        }
-        a{
-            padding-top: 5%;
-            @media (min-width: 768px) {
-                padding-top: 14%;
+
+        .header-social-icon {
+            padding: 0 7px;
+
+            i {
+                color: #aeaeae;
+                font-size: 20px;
             }
         }
-        // .header-social-icon
-        // {
-        //     color: #aeaeae;
-        //     font-size: 20px;
-        //     i{
-        //         padding-top: 17%;
-        //     }
-        // }
     }
 
     .logo-container
     {
         display: flex;
         justify-content: center;
+        align-items: center;
+
         @media (min-width: 768px) {
             justify-content: flex-end;
         } 
     }
-    .contact-box
-    {
-        padding-top: 2%;
-        justify-content: center;
-        @media (min-width: 768px) {
-            justify-content: flex-end;
-        }    
-    }
-    .contact-icon{
-        font-size: 20px;
-        @media (min-width: 1017px) {
-            font-size: 43px;
-        }
-    }
+
     a{
         text-decoration: none;
         color:#000;
@@ -61,11 +42,44 @@
             color: #7b8185;
         }
     }
-    .head-right-items
-    {
-        padding-right: 2%;
 
-    }    
+    .header-right-items
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+        
+        .header-right-item {
+            padding: 0 13px;
+
+            a {
+                display: flex;
+                align-items: center;
+                font-size: 0.8rem;
+
+                .icon {
+                    margin-right: 8px;
+                }
+
+                p {
+                    margin-bottom: 0;
+                }
+
+                .bold-text {
+                    font-family: $primary-font;
+                    font-weight: bold;
+                    color: #38454f;
+                }
+
+                .gray-text {
+                    font-family: $primary-font;
+                    color: #7b8185;
+                }
+            }
+        }
+    }
+
+      
 }
 
 // logo-section

@@ -16487,6 +16487,10 @@ h3 {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media (min-width: 768px) {
   .header-ribbon .social-media-box {
@@ -16496,17 +16500,12 @@ h3 {
             justify-content: left;
   }
 }
-.header-ribbon .social-media-box i {
+.header-ribbon .social-media-box .header-social-icon {
+  padding: 0 7px;
+}
+.header-ribbon .social-media-box .header-social-icon i {
   color: #aeaeae;
   font-size: 20px;
-}
-.header-ribbon .social-media-box a {
-  padding-top: 5%;
-}
-@media (min-width: 768px) {
-  .header-ribbon .social-media-box a {
-    padding-top: 14%;
-  }
 }
 .header-ribbon .logo-container {
   display: -webkit-box;
@@ -16517,6 +16516,10 @@ h3 {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media (min-width: 768px) {
   .header-ribbon .logo-container {
@@ -16524,29 +16527,6 @@ h3 {
     -webkit-justify-content: flex-end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-  }
-}
-.header-ribbon .contact-box {
-  padding-top: 2%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-@media (min-width: 768px) {
-  .header-ribbon .contact-box {
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-}
-.header-ribbon .contact-icon {
-  font-size: 20px;
-}
-@media (min-width: 1017px) {
-  .header-ribbon .contact-icon {
-    font-size: 43px;
   }
 }
 .header-ribbon a {
@@ -16558,8 +16538,48 @@ h3 {
 .header-ribbon a .head-sub {
   color: #7b8185;
 }
-.header-ribbon .head-right-items {
-  padding-right: 2%;
+.header-ribbon .header-right-items {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-ribbon .header-right-items .header-right-item {
+  padding: 0 13px;
+}
+.header-ribbon .header-right-items .header-right-item a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.8rem;
+}
+.header-ribbon .header-right-items .header-right-item a .icon {
+  margin-right: 8px;
+}
+.header-ribbon .header-right-items .header-right-item a p {
+  margin-bottom: 0;
+}
+.header-ribbon .header-right-items .header-right-item a .bold-text {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  color: #38454f;
+}
+.header-ribbon .header-right-items .header-right-item a .gray-text {
+  font-family: "Lato", sans-serif;
+  color: #7b8185;
 }
 
 .logo-section {

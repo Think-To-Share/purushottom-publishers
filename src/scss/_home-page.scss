@@ -117,11 +117,16 @@
 // hero-section
 .hero-section {
     display: flex;
-    background-image: url('../images/hero.jpg');
+    // background-image: url('../images/hero.jpg');
     background-size: cover;
     margin-bottom: 80px;
-    height: 150vh;
+    // height: 150vh;
+    justify-content: center;
+    .banner-box
+    {
+        position: absolute;
 
+    }
     p{
         text-align: center;
         margin-bottom: 0px;
@@ -129,23 +134,31 @@
     .main-title {
         font-family: $secondary-font;
         font-weight: 400;
-        font-size: 50px;
+        font-size: 25px;
         color: #ffffff;
+        @media(min-width: 768px)
+        {
+            font-size: 50px;
+        }
     }
     .publishers-title {
         font-family: $secondary-font;
         font-weight: 400;
-        font-size: 50px;
+        font-size: 25px;
         color: #ffffff;
+        @media(min-width: 768px)
+        {
+            font-size: 50px;
+        }
     }
     .btn-container {
         text-align: center;
 
         .contact-us-btn {
             text-decoration: none;
-            font-size: 10px;
+            font-size: 9px;
             border: 2px solid black;
-            padding: 12px 30px;
+            padding: 8px 22px;
             font-family: $primary-font;
             font-weight: 700;
             color: #2a3c70;
@@ -153,6 +166,13 @@
             border-color: white;
             display: inline-block;
             position: relative;
+            margin-top: 10%;
+            @media(min-width: 768px)
+            {
+                font-size: 10px;
+                padding: 12px 30px;
+                margin-top: 2%;
+            }
 
             &::after {
                 content: '';

@@ -16623,10 +16623,15 @@ h3 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-image: url(../public/images/hero-0425ba2919c22f39eb85b02b4782537a.jpg);
   background-size: cover;
   margin-bottom: 80px;
-  height: 150vh;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.hero-section .banner-box {
+  position: absolute;
 }
 .hero-section p {
   text-align: center;
@@ -16635,23 +16640,33 @@ h3 {
 .hero-section .main-title {
   font-family: "Hermeneus One", sans-serif;
   font-weight: 400;
-  font-size: 50px;
+  font-size: 25px;
   color: #ffffff;
+}
+@media (min-width: 768px) {
+  .hero-section .main-title {
+    font-size: 50px;
+  }
 }
 .hero-section .publishers-title {
   font-family: "Hermeneus One", sans-serif;
   font-weight: 400;
-  font-size: 50px;
+  font-size: 25px;
   color: #ffffff;
+}
+@media (min-width: 768px) {
+  .hero-section .publishers-title {
+    font-size: 50px;
+  }
 }
 .hero-section .btn-container {
   text-align: center;
 }
 .hero-section .btn-container .contact-us-btn {
   text-decoration: none;
-  font-size: 10px;
+  font-size: 9px;
   border: 2px solid black;
-  padding: 12px 30px;
+  padding: 8px 22px;
   font-family: "Lato", sans-serif;
   font-weight: 700;
   color: #2a3c70;
@@ -16659,6 +16674,14 @@ h3 {
   border-color: white;
   display: inline-block;
   position: relative;
+  margin-top: 10%;
+}
+@media (min-width: 768px) {
+  .hero-section .btn-container .contact-us-btn {
+    font-size: 10px;
+    padding: 12px 30px;
+    margin-top: 2%;
+  }
 }
 .hero-section .btn-container .contact-us-btn::after {
   content: "";

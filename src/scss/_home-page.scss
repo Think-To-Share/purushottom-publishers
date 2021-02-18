@@ -124,8 +124,12 @@
     justify-content: center;
     .banner-box
     {
-        position: absolute;
-
+        bottom: 0% !important;
+        display: block !important;
+        @media(min-width: 768px)
+        {
+            bottom: 60% !important;
+        }
     }
     p{
         text-align: center;
@@ -151,8 +155,7 @@
             font-size: 50px;
         }
     }
-    .btn-container {
-        text-align: center;
+    
 
         .contact-us-btn {
             text-decoration: none;
@@ -193,7 +196,7 @@
                 }
             }
         }
-    }
+    
     @media (min-width: 768px) {
     }
 }

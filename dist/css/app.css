@@ -16631,7 +16631,13 @@ h3 {
           justify-content: center;
 }
 .hero-section .banner-box {
-  position: absolute;
+  bottom: 0% !important;
+  display: block !important;
+}
+@media (min-width: 768px) {
+  .hero-section .banner-box {
+    bottom: 60% !important;
+  }
 }
 .hero-section p {
   text-align: center;
@@ -16659,10 +16665,7 @@ h3 {
     font-size: 50px;
   }
 }
-.hero-section .btn-container {
-  text-align: center;
-}
-.hero-section .btn-container .contact-us-btn {
+.hero-section .contact-us-btn {
   text-decoration: none;
   font-size: 9px;
   border: 2px solid black;
@@ -16677,13 +16680,13 @@ h3 {
   margin-top: 10%;
 }
 @media (min-width: 768px) {
-  .hero-section .btn-container .contact-us-btn {
+  .hero-section .contact-us-btn {
     font-size: 10px;
     padding: 12px 30px;
     margin-top: 2%;
   }
 }
-.hero-section .btn-container .contact-us-btn::after {
+.hero-section .contact-us-btn::after {
   content: "";
   position: absolute;
   width: calc(100% + 20px);
@@ -16696,7 +16699,7 @@ h3 {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.hero-section .btn-container .contact-us-btn:hover::after {
+.hero-section .contact-us-btn:hover::after {
   width: 100%;
   height: 100%;
 }

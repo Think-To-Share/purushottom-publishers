@@ -16802,16 +16802,24 @@ h3 {
 }
 
 .recent-launch-section {
-  margin-bottom: 60px;
   background-image: url(../public/images/recent-70a89c8693bcc2d005be795d34729a6e.jpg);
   background-size: cover;
   width: 100%;
-  padding: 30vh;
+  height: 80vh;
+  padding-top: 10%;
+  padding-bottom: 25%;
+}
+.recent-launch-section .recent-launch-text-box {
+  text-align: center;
+}
+@media (width: 768px) {
+  .recent-launch-section .recent-launch-text-box {
+    text-align: left;
+  }
 }
 .recent-launch-section h2 {
   font-family: "Hermeneus One", sans-serif;
   font-weight: 400;
-  padding-left: 120px;
   color: #fff;
 }
 @media (min-width: 768px) {
@@ -16823,17 +16831,12 @@ h3 {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 13px;
-  margin-right: 55px;
-  padding-left: 120px;
   color: #fff;
 }
 @media (min-width: 768px) {
   .recent-launch-section p {
     color: #000;
   }
-}
-.recent-launch-section a {
-  padding-left: 120px;
 }
 .recent-launch-section .view-more-btn {
   border-radius: 10em;
@@ -16849,7 +16852,6 @@ h3 {
   border: 1px solid #2b3d72;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
-  margin-left: 120px;
 }
 .recent-launch-section .view-more-btn:hover {
   background: transparent;
@@ -16973,6 +16975,7 @@ h3 {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
 }
 @media (min-width: 768px) {
   .footer-section .news-box {
@@ -16980,6 +16983,7 @@ h3 {
     -webkit-justify-content: left;
         -ms-flex-pack: left;
             justify-content: left;
+    text-align: left;
   }
 }
 .footer-section .news-letter {

@@ -59,6 +59,11 @@
 
                 .icon {
                     margin-right: 8px;
+                    font-size: 24px;
+                    @media(min-width: 768px)
+                    {
+                        font-size: 3em;
+                    }
                 }
 
                 p {

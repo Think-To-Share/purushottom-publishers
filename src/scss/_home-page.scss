@@ -276,6 +276,7 @@
 
             .box {
                 min-height: 200px;
+                padding-top: 3%;
 
                 .text-box {
                     color: #fff;
@@ -317,6 +318,45 @@
                     background-image: url('../images/fetured-book-2.jpg');
                     background-size: cover;
                     background-position: bottom center;
+                    text-align: right;
+                    .text-box{
+                        text-align: right;
+                        padding-right: 2%;
+                        .product-title{
+                            font-size: 1em;
+                            @media(min-width:768px){
+                                font-size: 2.3em;
+                            }
+                        }
+                        .product-small-title{
+                            text-align: right;
+                            color: #fff;
+                            padding-right: 2%;
+                        }
+                        .shop-btn{
+                            border-radius: 10em;
+                            font-size:0.6em;
+                            padding: 8px 32px;
+                            text-transform: uppercase;
+                            color: white;
+                            background-color: #2b3d72;
+                            font-family: "Lato", sans-serif;
+                            font-weight: 600;
+                            text-decoration: none;
+                            display: inline-block;
+                            border: 1px solid #2b3d72;
+                            -webkit-transition: all 0.1s ease-in-out;
+                            transition: all 0.1s ease-in-out;
+                            &:hover{
+                                background-color: #fff;
+                                color: #2b3d72;
+                            }
+                            @media(min-width:768px){
+                                padding: 10px 40px;
+                                font-size: 0.9em;
+                            }
+                        }
+                    }
                 }
 
                 &.right-bottom-box {
@@ -324,6 +364,45 @@
                     background-image: url('../images/fetured-book-3.jpg');
                     background-size: cover;
                     background-position: center;
+                    .text-box{
+                        text-align: left;
+                        padding-left: 2%;
+                        .product-title{
+                            font-size: 1em;
+                            @media(min-width:768px){
+                                font-size: 2.3em;
+                            }
+                        }
+                        .product-small-title{
+                            text-align: left;
+                            color: #fff;
+                            padding-left: 2%;
+                            
+                        }
+                        .shop-btn{
+                            border-radius: 10em;
+                            font-size:0.6em;
+                            padding: 8px 32px;
+                            text-transform: uppercase;
+                            color: white;
+                            background-color: #2b3d72;
+                            font-family: "Lato", sans-serif;
+                            font-weight: 600;
+                            text-decoration: none;
+                            display: inline-block;
+                            border: 1px solid #2b3d72;
+                            -webkit-transition: all 0.1s ease-in-out;
+                            transition: all 0.1s ease-in-out;
+                            &:hover{
+                                background-color:#fff;
+                                color: #2b3d72;
+                            }
+                            @media(min-width:768px){
+                                padding: 10px 40px;
+                                font-size: 0.9em;
+                            }
+                        }
+                    }
                 }
             }
             .card{
@@ -675,7 +754,7 @@
         ul {
             padding: 0px 0px;
             a {
-                display: block;
+                display: inline-block;
                 text-decoration: none;
                 &.item {
                     font-family: $primary-font;

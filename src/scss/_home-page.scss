@@ -184,7 +184,7 @@
     }
     .slide {
         .slide-main {
-            min-height: 600px;
+            min-height: 300px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -193,6 +193,11 @@
             background-repeat: no-repeat;
             pointer-events: none;
             user-select: none;
+            @media(min-width:576px)
+            {
+                min-height: 600px;
+                align-items: flex-end;
+            }
 
             .banner-box {
                 .main-title {

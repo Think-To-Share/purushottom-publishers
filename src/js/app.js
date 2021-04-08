@@ -1,7 +1,10 @@
 import '../scss/app.scss';
 import {tns} from 'tiny-slider/src/tiny-slider'
+import Aos from 'aos';
 
 window.addEventListener('load', () => {
+    Aos.init();
+
     // Homepage Slider
     if(document.querySelector('.hero-section')) {
         document.querySelector('.hero-section').style.display = 'block';

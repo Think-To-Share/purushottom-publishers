@@ -283,7 +283,7 @@
         text-align: center;
         font-family: $primary-font;
         font-weight: 400;
-        font-size: 0.8rem;
+        font-size: 1em;
         color: #757575;
         margin-bottom: 3rem;
     }
@@ -318,7 +318,7 @@
             text-align: center;
             font-family: $primary-font;
             font-weight: 400;
-            font-size: 0.8rem;
+            font-size: 1em;
             color: #757575;
             text-align: center;
             @media (width: 768px) {
@@ -442,24 +442,7 @@
         }
     }
 }
-//bestseller-section
-.bestseller-section {
-    margin-top: 80px;
-    h2 {
-        text-align: center;
-        color: #2f3033;
-        font-family: $secondary-font;
-        font-weight: 400;
-        font-size: 2.3rem;
-    }
-    p {
-        text-align: center;
-        font-family: $primary-font;
-        font-weight: 400;
-        font-size: 0.8rem;
-        color: #757575;
-    }
-}
+
 
 //recent-launch-section
 .recent-launch-section {
@@ -530,7 +513,7 @@
         text-align: center;
         font-family: $primary-font;
         font-weight: 400;
-        font-size: 0.8rem;
+        font-size: 1em;
         color: #757575;
         margin-bottom: 45px;
     }
@@ -625,7 +608,7 @@
     }
     h6 {
         font-family: $primary-font;
-        font-size: 0.9em;
+        font-size: 1em;
         font-weight: 600;
         color: white;
         font-size: 12px;
@@ -780,7 +763,7 @@
             font-family: $primary-font;
             font-weight: 600;
             margin-bottom: 5px;
-            font-size: 12px;
+            font-size: 1em;
             margin-bottom: 18px;
             margin-top: 25px;
         }
@@ -813,7 +796,7 @@
                         font-family: $primary-font;
                         font-weight: 400;
                         color: #9a9a9a;
-                        font-size: 11px;
+                        font-size: 0.9em;
                         list-style-type: none;
                         margin-bottom: 10px;
 

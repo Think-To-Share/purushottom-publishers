@@ -1,13 +1,13 @@
 import '../scss/app.scss';
+import './animations';
 import {tns} from 'tiny-slider/src/tiny-slider'
-import Aos from 'aos';
 
 window.addEventListener('load', () => {
-    Aos.init();
 
     // Homepage Slider
     if(document.querySelector('.hero-section')) {
         document.querySelector('.hero-section').style.display = 'block';
+        document.querySelector('.homepage-slider-loading').style.display = 'none';
 
         const homepageSlider = tns({
             container: '.homepage-slider',

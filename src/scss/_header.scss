@@ -1,10 +1,132 @@
+// header ribbon
+.header-ribbon {
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+
+    a {
+        text-decoration: none;
+    }
+
+    .social-media-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+
+        @media (min-width: 768px) {
+            justify-content: left;
+            margin-top: 0;
+        }
+
+        .header-social-icon {
+            padding: 0 7px;
+
+            i {
+                color: #aeaeae;
+                font-size: 20px;
+                transition: color 0.2s ease-in-out;
+            }
+
+            &:hover {
+                i {
+                    color: #7a7a7a;
+                }
+            }
+        }
+    }
+
+    .logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (min-width: 768px) {
+            justify-content: flex-end;
+        }
+
+        &:hover {
+            img {
+                transition: opacity 0.2s ease-in-out;
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .header-right-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .header-right-item {
+            padding: 0 7px;
+            margin-top: 15px;
+            transition: opacity 0.2s ease-in;
+
+            @media (min-width: 768px) {
+                margin-top: 0;
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                font-size: 0.8rem;
+
+                .icon {
+                    margin-right: 8px;
+                    font-size: 24px;
+
+                    @media (min-width: 768px) {
+                        font-size: 2.2em;
+                    }
+                }
+
+                p {
+                    margin-bottom: 0;
+                    display: none;
+
+                    @media (min-width: 576px) {
+                        display: block;
+                    }
+
+                    @media (min-width: 768px) {
+                        display: none;
+                    }
+
+                    @media (min-width: 1200px) {
+                        display: block;
+                    }
+                }
+
+                .bold-text {
+                    font-family: $primary-font;
+                    font-weight: bold;
+                    color: #38454f;
+                }
+
+                .gray-text {
+                    font-family: $primary-font;
+                    color: #7b8185;
+                }
+            }
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
 .header-section{
     display:flex;
     justify-content: center;
+
     .nav{
         ul{
             display: flex;
             align-items: center;
+            margin: 0;
+            padding: 0;
+            list-style: none;
             
             li{
                 padding:15px 20px;
@@ -12,13 +134,40 @@
                 font-weight:400;
                 font-size: 1em;
                 
-                a{
+                a {
+                    position: relative;
                     text-decoration: none;
+                    text-transform: uppercase;
                     color:#6b6b6b;
 
+                    &::before {
+                        content: " ";
+                        transition: 0.5s;
+                        background-color: $primary-color;
+                        position: absolute;
+                        top: calc(100% + 5px);
+                        left: 0;
+                        width: 0;
+                        height: 2px;
+                    }
+
                     &:hover{
-                        color:#2a3c70;
+                        color: darken($color: $primary-color, $amount: 2);
                         transition: color 0.1s ease-in-out;
+
+                        &::before {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                &.current_page_item {
+                    a {
+                        color: darken($color: $primary-color, $amount: 2);
+
+                        &::before {
+                            width: 100%;
+                        }
                     }
                 }
             }

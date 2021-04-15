@@ -1,127 +1,3 @@
-// header ribbon
-.header-ribbon {
-    .social-media-box {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 15px;
-
-        @media (min-width: 768px) {
-            justify-content: left;
-            margin-top: 0;
-        }
-
-        .header-social-icon {
-            padding: 0 7px;
-
-            i {
-                color: #aeaeae;
-                font-size: 20px;
-            }
-        }
-    }
-
-    .logo-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        @media (min-width: 768px) {
-            justify-content: flex-end;
-        }
-    }
-
-    a {
-        text-decoration: none;
-        color: #000;
-        font-family: $primary-font;
-        font-size: 0.7em;
-        .head-sub {
-            color: #7b8185;
-        }
-    }
-
-    .header-right-items {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .header-right-item {
-            padding: 0 13px;
-            margin-top: 15px;
-
-            @media (min-width: 768px) {
-                margin-top: 0;
-            }
-
-            a {
-                display: flex;
-                align-items: center;
-                font-size: 0.8rem;
-
-                .icon {
-                    margin-right: 8px;
-                    font-size: 24px;
-
-                    @media (min-width: 768px) {
-                        font-size: 3em;
-                    }
-                }
-
-                p {
-                    margin-bottom: 0;
-                    display: none;
-
-                    @media (min-width: 576px) {
-                        display: block;
-                    }
-                }
-
-                .bold-text {
-                    font-family: $primary-font;
-                    font-weight: bold;
-                    color: #38454f;
-                }
-
-                .gray-text {
-                    font-family: $primary-font;
-                    color: #7b8185;
-                }
-            }
-        }
-    }
-}
-
-// logo-section
-.logo-section {
-    display: flex;
-    flex-wrap: wrap;
-    border-bottom: 1px solid #dbdbdb;
-    align-items: center;
-
-    .header-social-icon {
-        color: #aeaeae;
-    }
-
-    img {
-        justify-content: center;
-        margin: auto;
-        margin-bottom: 20px;
-        margin-left: 271px;
-        width: 23%;
-    }
-    a {
-        display: flex;
-        margin-top: 30px;
-        padding: 0 5px;
-        text-decoration: none;
-        i {
-            .fas fa-headphones-alt {
-            }
-        }
-    }
-}
-
 // hero-section
 .hero-section {
     display: none;
@@ -568,13 +444,6 @@
             width: auto;
         }
     }
-    img {
-        display: inline-block;
-        margin: 5px;
-        height: 22px;
-        width: 22px;
-        border-radius: 5px;
-    }
     input {
         padding: 12px;
         padding-right: 50px;
@@ -657,6 +526,11 @@
 
             img {
                 margin: 5px;
+                display: inline-block;
+                margin: 5px;
+                height: 22px;
+                width: 22px;
+                border-radius: 5px;
             }
 
             a {
@@ -707,7 +581,6 @@
 
         a {
             display: inline-block;
-            height: 22px;
         }
         h6 {
             color: #f1f1f1;
@@ -718,18 +591,14 @@
             margin-bottom: 18px;
             margin-top: 25px;
         }
-        .payment-img {
-            width: 82px;
-            height: 47px;
-            border-radius: 0;
-        }
+
         .payment-icons {
-            display: -webkit-inline-box;
+            display: flex;
+
             img {
-                margin-bottom: 40%;
-            }
-            @media (min-width: 768px) {
-                display: flex;
+                margin-bottom: 20px;
+                display: inline-block;
+                max-width: 100%;
             }
         }
 

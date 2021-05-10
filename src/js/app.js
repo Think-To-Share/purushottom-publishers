@@ -14,7 +14,7 @@ window.addEventListener('load', () => {
             arrowKeys: true,
             mouseDrag: true,
             autoHeight: true,
-            autoplay: true,
+            autoplay: false,
             autoplayButtonOutput: false,
             controlsText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
             navPosition: 'bottom',

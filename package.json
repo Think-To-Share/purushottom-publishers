@@ -30,7 +30,7 @@
     "last 3 iOS versions"
   ],
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.2",
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "bootstrap": "^4.6.0",
     "gsap": "^3.6.1",
     "tiny-slider": "^2.9.3"

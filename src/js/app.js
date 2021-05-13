@@ -3,6 +3,7 @@ import './animations';
 import {tns} from 'tiny-slider/src/tiny-slider'
 
 window.addEventListener('load', () => {
+    stickyHeaderInit()
 
     // Homepage Slider
     if(document.querySelector('.hero-section')) {
@@ -21,3 +22,19 @@ window.addEventListener('load', () => {
         })
     }
 })
+
+function stickyHeaderInit() {
+    const header = document.querySelector('header.header');
+    const headerHeight = header.offsetHeight
+    const headerMenu = header.querySelector('.header-section')
+
+    window.addEventListener('scroll', () => {
+        if(window.pageYOffset > (headerHeight + 15)) {
+            headerMenu.classList.add('fixed')
+        }else {
+            headerMenu.classList.remove('fixed')
+        }
+    })
+    
+    console.log()
+}

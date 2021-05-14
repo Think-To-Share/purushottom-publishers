@@ -1,9 +1,33 @@
 import '../scss/app.scss';
 import './animations';
 import {tns} from 'tiny-slider/src/tiny-slider'
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import gsap from 'gsap/gsap-core';
+
+gsap.registerPlugin(ScrollToPlugin);
 
 window.addEventListener('load', () => {
     stickyHeaderInit()
+
+    const backToTopBtn = document.querySelector('.back-to-top')
+    if(backToTopBtn) {
+        window.addEventListener('scroll', () => {
+            if(window.pageYOffset > 200) {
+                backToTopBtn.classList.remove('d-none')
+            }else {
+                backToTopBtn.classList.add('d-none')
+            }
+        })
+
+        backToTopBtn.addEventListener('click', () => {
+            gsap.to(window, {
+                scrollTo: {
+                    y: 0,
+                },
+                duration: 2,
+            })
+        })
+    }
 
     // Homepage Slider
     if(document.querySelector('.hero-section')) {

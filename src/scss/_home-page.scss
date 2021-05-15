@@ -625,19 +625,16 @@
                 a {
                     display: inline-block;
                     text-decoration: none;
+                    font-family: $primary-font;
+                    font-weight: 400;
+                    color: #9a9a9a;
+                    font-size: 0.9em;
+                    list-style-type: none;
+                    margin-bottom: 10px;
 
-                    &.item {
-                        font-family: $primary-font;
-                        font-weight: 400;
-                        color: #9a9a9a;
-                        font-size: 0.9em;
-                        list-style-type: none;
-                        margin-bottom: 10px;
-
-                        &:hover {
-                            color: white;
-                            transition: color 0.1s ease-in-out;
-                        }
+                    &:hover {
+                        color: white;
+                        transition: color 0.1s ease-in-out;
                     }
                 }
             }

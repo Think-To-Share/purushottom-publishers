@@ -21,15 +21,52 @@
         .header-social-icon {
             padding: 0 7px;
 
+            $facebook_color: #1877f2;
+            $twitter_color: #1da1f2;
+            $instagram_color: #c32aa3;
+            $youtube_color: #ff0000;
+
             i {
                 color: #aeaeae;
                 font-size: 20px;
                 transition: color 0.2s ease-in-out;
+
+                &.fa-facebook, &.fa-facebook-f {
+                    color: $facebook_color;
+                }
+
+                &.fa-twitter {
+                    color: $twitter_color;
+                }
+
+                &.fa-instagram, &.fa-instagram-square {
+                    color: $instagram_color;
+                }
+
+                &.fa-youtube, &.fa-youtube-square {
+                    color: $youtube_color;
+                }
             }
 
             &:hover {
                 i {
                     color: #7a7a7a;
+
+                    &.fa-facebook, &.fa-facebook-f {
+                        color: darken($facebook_color, 10);
+                    }
+
+                    &.fa-twitter {
+                        color: darken($twitter_color, 10);
+                    }
+
+                    &.fa-instagram, &.fa-instagram-square {
+                        color: darken($instagram_color, 10);
+                    }
+
+                    &.fa-youtube, &.fa-youtube-square {
+                        color: darken($youtube_color, 10);
+                    }
                 }
             }
         }
@@ -170,7 +207,7 @@
                     }
                 }
 
-                &.current_page_item {
+                &.current-menu-item {
                     a {
                         color: darken($color: $primary-color, $amount: 2);
 

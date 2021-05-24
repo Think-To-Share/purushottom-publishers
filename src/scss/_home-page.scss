@@ -189,6 +189,27 @@
         color: #757575;
         margin-bottom: 3rem;
     }
+
+    .view-more-container {
+        width: 100%;
+        display: inline;
+        text-align: center;
+
+        a {
+            border-radius: 10em;
+            padding: 10px 30px;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            color: white;
+            background-color: $primary-color;
+            font-family: $primary-font;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            border: 1px solid $primary-color;
+            transition: all 0.1s ease-in-out;
+        }
+    }
 }
 
 //bestseller-section

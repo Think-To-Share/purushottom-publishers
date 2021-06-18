@@ -243,116 +243,40 @@
     }
 
     .section-main {
-        .shop-boxes {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-areas:
-                'leftBox'
-                'rightTopBox'
-                'rightBottomBox';
+        .tns-outer {
+            position: relative;
 
-            @media (min-width: 768px) {
-                grid-template-columns: 1fr 1fr;
-                grid-template-areas:
-                    'leftBox rightTopBox'
-                    'leftBox rightBottomBox';
-            }
+            .tns-controls {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%);
+                z-index: 2;
+                width: calc(100% + 110px);
+                display: flex;
+                justify-content: space-between;
 
-            .box {
-                min-height: 200px;
-                padding-top: 3%;
+                button {
+                    pointer-events: all;
+                    background: transparent;
+                    border: none;
+                    color: #222;
+                    font-size: 25px;
+                    // padding: 30px;
+                    transition: 0.5s ease-in-out;
 
-                .text-box {
-                    color: #fff;
-
-                    .product-title {
-                        font-family: $secondary-font;
-                        font-size: 2.3em;
-                    }
-
-                    .product-small-title {
-                        font-family: $primary-font;
-                        color: #fff;
-                    }
-
-                    .shop-btn {
-                        border-radius: 10em;
-                        font-size: 1em;
-                        padding: 10px 40px;
-                        text-transform: uppercase;
-                        color: white;
-                        background-color: $primary-color;
-                        font-family: $primary-font;
-                        font-weight: 600;
-                        text-decoration: none;
-                        display: inline-block;
-                        border: 1px solid $primary-color;
-                        -webkit-transition: all 0.1s ease-in-out;
-                        transition: all 0.1s ease-in-out;
-
-                        &:hover {
-                            background-color: #fff;
-                            color: $primary-color;
-                        }
-                    }
-                }
-
-                &.left-box {
-                    grid-area: leftBox;
-                    background-color: #110d1e;
-
-                    .image-container {
-                        width: 100%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-
-                        img {
-                            width: auto;
-                            max-width: 100%;
-                        }
-                    }
-
-                    .text-box {
-                        text-align: center;
-                    }
-                }
-
-                &.right-top-box {
-                    grid-area: rightTopBox;
-                    background-image: url('../images/fetured-book-2.jpg');
-                    background-size: cover;
-                    background-position: bottom center;
-                    text-align: right;
-                    .text-box {
-                        text-align: right;
-                        padding-right: 2%;
-
-                        .product-small-title {
-                            text-align: right;
-                            padding-right: 2%;
-                        }
-                    }
-                }
-
-                &.right-bottom-box {
-                    grid-area: rightBottomBox;
-                    background-image: url('../images/fetured-book-3.jpg');
-                    background-size: cover;
-                    background-position: center;
-                    .text-box {
-                        text-align: left;
-                        padding-left: 2%;
-
-                        .product-small-title {
-                            text-align: left;
-                            padding-left: 2%;
-                        }
+                    &:hover {
+                        opacity: 0.7;
                     }
                 }
             }
-            .card {
-                border-color: #c7c7c7;
+        }
+
+        .best-seller-slider {
+            .slide {
+                img {
+                    width: 100%;
+                }
             }
         }
     }

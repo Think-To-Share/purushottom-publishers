@@ -39,10 +39,31 @@ window.addEventListener('load', () => {
             arrowKeys: true,
             mouseDrag: true,
             autoHeight: true,
-            autoplay: false,
+            autoplay: true,
             autoplayButtonOutput: false,
             controlsText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
             navPosition: 'bottom',
+        })
+    }
+
+    if(true) {
+        tns({
+            container: '.best-seller-slider',
+            controls: false,
+            mouseDrag: true,
+            autoHeight: true,
+            autoplay: true,
+            autoplayButtonOutput: false,
+            nav: false,
+            responsive: {
+                768: {
+                    controls: true,
+                    controlsText: ["<i class='fas fa-chevron-left fa-2x'></i>", "<i class='fas fa-chevron-right fa-2x'></i>"],
+                },
+                1024: {
+                    controlsText: ["<i class='fas fa-chevron-left fa-3x'></i>", "<i class='fas fa-chevron-right fa-3x'></i>"],
+                }
+            }
         })
     }
 })

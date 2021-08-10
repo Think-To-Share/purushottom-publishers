@@ -61,7 +61,7 @@ window.addEventListener('load', () => {
                     controlsText: ["<i class='fas fa-chevron-left fa-2x'></i>", "<i class='fas fa-chevron-right fa-2x'></i>"],
                 },
                 1024: {
-                    controlsText: ["<i class='fas fa-chevron-left fa-3x'></i>", "<i class='fas fa-chevron-right fa-3x'></i>"],
+                    controlsText: ["<i class='fas fa-chevron-left fa-2x'></i>", "<i class='fas fa-chevron-right fa-2x'></i>"],
                 }
             }
         })
